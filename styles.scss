@@ -15,6 +15,12 @@
   --dark-color: #272d35;
 }
 
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 html,
 body {
   font-family: "Open Sans", sans-serif;
@@ -34,8 +40,59 @@ img {
   max-width: 100%;
 }
 
+.navbar {
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-flex {
+  @include flex-between;
+}
+
+.navbar img {
+  width: 81px;
+  height: 32px;
+}
+
+.navbar .main-menu-list {
+  @include flex-between;
+  gap: 2rem;
+  font-weight: 600;
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-sm {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 // media queries
-@media (max-width:1200px) {}
-@media (max-width:992px) {}
-@media (max-width:768px) {}
-@media (max-width:576px) {}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}

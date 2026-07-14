@@ -61,6 +61,11 @@ img {
   transition: background-color 0.3s ease-in-out;
 }
 
+.navbar.navbar-scroll {
+  background-color: rgba(235, 77, 85, 0.7);
+  backdrop-filter: blur(10px);
+}
+
 .navbar-flex {
   display: flex;
   justify-content: space-between;
@@ -231,7 +236,6 @@ img {
     display: block;
   }
   .hero {
-    border: 1px solid chartreuse;
     padding: 7rem 0 0;
   }
   .hero .hero-flex {

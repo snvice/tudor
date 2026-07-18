@@ -246,7 +246,7 @@ img {
 
 .topic {
   padding: 15px;
-  border:1px solid #e5e7eb;
+  border: 1px solid #e5e7eb;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(18px);
@@ -260,6 +260,43 @@ img {
   h3 {
     font-size: 0.9rem;
     font-weight: 500;
+  }
+}
+
+// Course Summary
+.summary {
+  background: var(--light-color);
+  color: var(--dark-color);
+  padding: 4rem 2rem 5rem;
+  // border: 1px solid gold;
+
+  .section-lists {
+    background: #fff;
+    padding: 2rem;
+    // border: 1px solid gold;
+  }
+
+  .list {
+    // border: 1px solid gold;
+  }
+
+  .list-header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem 0rem;
+  }
+
+  .list-item {
+    // border: 1px solid rgb(18, 179, 85);
+    padding: 1.4rem 0;
+    border-bottom: 1px solid #f1f4f6;
+  }
+
+  .list-item:last-child {
+    border-bottom: none;
   }
 }
 
@@ -326,6 +363,28 @@ img {
 
   .topics {
     grid-template-columns: 1fr;
+  }
+
+  .summary {
+    padding: 4rem 0rem 5rem;
+
+    .section-lists {
+      padding: 2rem 1rem;
+    }
+
+    .list-header {
+      padding: 0.5rem 1rem;
+      margin: 0rem;
+    }
+
+    .list {
+      margin-bottom: 1rem;
+    }
+
+    .list-item {
+      padding: 1.4rem 0;
+      border-bottom: 1px solid #f1f4f6;
+    }
   }
 }
 

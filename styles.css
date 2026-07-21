@@ -248,10 +248,6 @@ img {
   display: block;
 }
 
-.learn {
-  padding-top: 2rem;
-}
-
 .topics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -279,7 +275,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 1rem 0 2rem;
+  padding: 1rem 0 0rem;
 }
 .chapter-cards img {
   width: 130px;
@@ -351,16 +347,11 @@ img {
   color: var(--secondary-color);
 }
 
-.takeaways {
-  border: 3px solid rgb(207, 17, 198);
-}
-
 .takeaways-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 1.5rem 0;
-  border: 1px solid rgb(165, 7, 28);
 }
 .takeaways-cards .card {
   flex-direction: row;
@@ -368,16 +359,11 @@ img {
   gap: 1.2rem;
 }
 
-.details {
-  border: 4px dotted brown;
-}
-
 .details-flex {
   display: flex;
   gap: 4rem;
   justify-content: center;
   align-items: center;
-  border: 1px solid aqua;
 }
 .details-flex img {
   width: 100%;
@@ -394,7 +380,7 @@ img {
   margin: 0;
 }
 .details-flex p {
-  margin: 1rem 0 2rem;
+  margin: 1.5rem 0 2rem;
 }
 
 .author {
@@ -411,9 +397,9 @@ img {
 }
 
 .stats {
+  margin-top: 2rem;
   background: #000 url(./images/stats-background.jpg) center center/cover no-repeat;
   color: #fff;
-  border: 2px solid rgb(201, 10, 169);
 }
 .stats .stats-flex {
   display: flex;
@@ -571,6 +557,9 @@ img {
   .topics {
     grid-template-columns: 1fr;
   }
+  .learn {
+    padding-top: 1rem;
+  }
   .summary .section-lists {
     padding: 0rem 1rem;
   }
@@ -614,6 +603,9 @@ img {
   .takeaways-cards {
     grid-template-columns: 1fr;
   }
+  .course-section {
+    padding-top: 1rem;
+  }
   .details-flex {
     flex-direction: column-reverse;
   }
@@ -630,6 +622,9 @@ img {
   }
   .stats h3 {
     font-size: 2.32rem;
+  }
+  .newsletter {
+    padding-top: 0;
   }
 }
 .container-sm {

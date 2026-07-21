@@ -64,7 +64,7 @@ img {
 
 .section {
   padding-top: 2rem;
-  // border: 1px solid aqua;
+  // border: 11px dotted rgb(231, 235, 11);
   scroll-margin-top: 80px;
 }
 
@@ -264,9 +264,6 @@ img {
 }
 
 // Learn Section
-.learn {
-  padding-top: 2rem;
-}
 .topics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -297,7 +294,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 1rem 0 2rem;
+  padding: 1rem 0 0rem;
 
   img {
     width: 130px;
@@ -384,15 +381,11 @@ img {
 }
 
 // Takeaways Section
-.takeaways {
-  border: 3px solid rgb(207, 17, 198);
-}
 .takeaways-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 1.5rem 0;
-  border: 1px solid rgb(165, 7, 28);
 
   .card {
     flex-direction: row;
@@ -402,16 +395,12 @@ img {
 }
 
 // Course details
-.details {
-  border: 4px dotted brown;
-}
 
 .details-flex {
   display: flex;
   gap: 4rem;
   justify-content: center;
   align-items: center;
-  border: 1px solid aqua;
 
   img {
     width: 100%;
@@ -421,7 +410,6 @@ img {
   h2 {
     font-size: 2rem;
     font-weight: 700;
-    // margin: 0.5rem 0;
   }
 
   .heading-border {
@@ -432,7 +420,7 @@ img {
   }
 
   p {
-    margin: 1rem 0 2rem;
+    margin: 1.5rem 0 2rem;
   }
 }
 
@@ -455,10 +443,10 @@ img {
 
 // Stats Section
 .stats {
+  margin-top: 2rem;
   background: #000 url(./images/stats-background.jpg) center center/cover
     no-repeat;
   color: #fff;
-  border: 2px solid rgb(201, 10, 169);
 
   .stats-flex {
     display: flex;
@@ -473,7 +461,6 @@ img {
   }
 
   .stats-numbers {
-    // border: 1px solid rgb(28, 13, 236);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,7 +474,6 @@ img {
       border: 0.1px solid #e5e7eb25;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      // background: #ffffff42;
 
       p {
         font-size: 0.8rem;
@@ -654,6 +640,10 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .learn {
+    padding-top: 1rem;
+  }
+
   .summary {
     .section-lists {
       padding: 0rem 1rem;
@@ -715,6 +705,9 @@ img {
   }
 
   // Course details
+  .course-section {
+    padding-top: 1rem;
+  }
   .details-flex {
     flex-direction: column-reverse;
 
@@ -738,6 +731,11 @@ img {
     h3 {
       font-size: 2.32rem;
     }
+  }
+
+  // Newsletter
+  .newsletter {
+    padding-top: 0;
   }
 }
 
